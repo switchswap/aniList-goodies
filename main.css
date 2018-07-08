@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    background-color: aqua;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#PageContainer {}
+
+#Header{
+    height: 100%; 
+    width: 100%;
+    text-align: center;
+
+}
+
+#MainContent{
+    height: 100%; 
+    width: 100%;
+    text-align: center;
+}
+
+#TimeBreakdown{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: deepskyblue;
+}
