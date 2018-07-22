@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script type="text/javascript" src="calendarJS.js"></script>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+            <!-- Navbar content -->
+            <a class="navbar-brand" href="AniCalander.html">AniCalandar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <span class="navbar-text">Powered by AniList!</span>
+            </div>
+
+        </nav>
+        <br>
+        <div id="entryPage" class="user-entry">
+            <br>
+            <br>
+            <br>
+            <center>
+                <h1>Enter Username</h1>
+            </center>
+            <br>
+
+            <div class="InputSection">
+                <div class="row justify-content-center">
+                    <div class="input-group mb-3 " style="max-width: 30rem">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AniList</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">AniList</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Kitsu (Soon)</a>
+                            </div>
+                        </div>
+                        <input type="text" id="usrname" class="form-control" placeholder="Username" aria-label="Username">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" onclick="onClick()">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div id="usrname404" class="alert alert-danger fade d-none" role="alert">
+                        Username not found! Please try again!<strong>&nbsp;&nbsp;</strong>
+                        <button type="button" class="close" onclick="closeAlert()" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="calendar" class="d-none">
+            <center>
+                <h1>Airing Anime</h1>
+            </center>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col card-deck text-center" style="max-width: 100rem;">
+                    <div class="card">
+                        <div class="card-header">
+                            Sunday
+                        </div>
+                        <ul class="list-group list-group-flush " id="Sunday">
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Monday
+                        </div>
+                        <ul class="list-group list-group-flush" id="Monday">
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Tuesday
+                        </div>
+                        <ul class="list-group list-group-flush" id="Tuesday">
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Wednsday
+                        </div>
+                        <ul class="list-group list-group-flush" id="Wednesday">
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Thursday
+                        </div>
+                        <ul class="list-group list-group-flush" id="Thursday">
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Friday
+                        </div>
+                        <ul class="list-group list-group-flush" id="Friday">
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Saturday
+                        </div>
+                        <ul class="list-group list-group-flush" id="Saturday">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+
+</html>
